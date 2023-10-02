@@ -1,0 +1,82 @@
+class ProductManager {
+    constructor() {
+      this.products = [];
+    }
+  
+    addProduct(title, description, price, thumbnail, code, stock) {
+      if (!title || !description || !price || !thumbnail || !code) {
+        console.log(`Todos los parámetros son obligatorios, solo el stock puede ser 0`);
+        return false;
+      } else {
+        const checkProduct = this.checkCode(code);
+        if (checkProduct === 'OK') {
+          const product = {
+            id: this.getMaxID() + 1,
+            code: code,
+            title: title,
+            description: description,
+            price: price,
+            thumbnail: thumbnail,
+            stock: stock
+          };
+
+          this.products.push(product);
+          console.log(`Producto ${code} creado`);
+          return `Producto ${code} creado`;
+        } else {
+          console.log(`El producto ${code} ya existe`);
+          return `El producto ${code} ya existe`;
+        }
+      }
+    }
+  
+    getProductById(productId) {
+      const product = this.products.find(product => product.id === productId);
+      if (product) {
+        console.log(product);
+        return product;
+      } else {
+        console.log(`El ID del producto ${productId} no existe`);
+        return `El ID del producto ${productId} no existe`;
+      }
+    }
+  
+    getProducts() {
+      console.log(this.products);
+      return this.products;
+    }
+  
+    getMaxID() {
+      const ids = this.products.map(product => product.id);
+      if (ids.includes(1)) {
+        return Math.max(...ids);
+      } else {
+        return 0;
+      }
+    }
+  
+    checkCode(codeProduct) {
+      if (!this.products.find(product => product.code === codeProduct)) {
+        return 'OK';
+      } else {
+        return 'Error';
+      }
+    }
+  }
+  
+  const manager = new ProductManager();
+  
+  manager.addProduct('MICHELIN','PILOT ROAD 6 120/70/17 75w',250000,'https/:','CUBIERTA001',3);
+  manager.addProduct('MICHELIN','PILOT ROAD 6 190/55/17 75w',360000,'https:/','CUBIERTA002',15);
+  manager.addProduct('BRIDGESTONE','180/55zr17 Rs-10',370000,'https:/','CUBIERTAO003',10);
+  manager.addProduct('PIRELLI','ANGEL ST 120/70 ZR17 W58',250000,'https/:','CUBIERTA004',13);
+  
+  console.log ('Detalle del array')
+  
+  manager.getProducts();
+  
+  console.log ('Busco el ID 1')
+  manager.getProductById(1);
+  
+  console.log ('Busco el ID 15')
+  manager.getProductById(15); 
