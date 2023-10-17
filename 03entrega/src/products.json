@@ -1,0 +1,101 @@
+[
+    {
+        "id": 2,
+        "title": "producto prueba 2 ",
+        "description": "solo me crearon para demostrar que no se repite el ID",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx789",
+        "stock": 30
+    },
+    {
+        "id": 3,
+        "title": "producto prueba 3 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx003",
+        "stock": 30
+    },
+    {
+        "id": 4,
+        "title": "producto prueba 4 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx004",
+        "stock": 30
+    },
+    {
+        "id": 5,
+        "title": "producto prueba 5 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx005",
+        "stock": 30
+    },
+    {
+        "id": 6,
+        "title": "producto prueba 6 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx006",
+        "stock": 30
+    },
+    {
+        "id": 7,
+        "title": "producto prueba 7 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx007",
+        "stock": 30
+    },
+    {
+        "id": 8,
+        "title": "producto prueba 8 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx008",
+        "stock": 30
+    },
+    {
+        "id": 9,
+        "title": "producto prueba 9 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx009",
+        "stock": 30
+    },
+    {
+        "id": 10,
+        "title": "producto prueba 10 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx010",
+        "stock": 30
+    },
+    {
+        "id": 11,
+        "title": "producto prueba 11 ",
+        "description": "producto prueba",
+        "price": 300,
+        "thumbnail": "sin imagen",
+        "code": "zyx011",
+        "stock": 30
+    },
+    {
+        "id": 1,
+        "title": "un nuevo título",
+        "description": "este es un producto prueba",
+        "price": 9999,
+        "thumbnail": "sin imagen",
+        "code": "abc123",
+        "stock": 25
+    }
+]

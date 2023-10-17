@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "03entrega",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
